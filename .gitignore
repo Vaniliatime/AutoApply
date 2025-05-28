@@ -1,0 +1,10 @@
+.env
+config.py
+profile.txt
+template.pdf
+applications_history.csv
+cover-letters/
+*.csv
+__pycache__/config.cpython-313.pyc
+__pycache__/
+*.pyc
