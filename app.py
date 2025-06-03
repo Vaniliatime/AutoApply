@@ -5,7 +5,7 @@ from reportlab.pdfgen import canvas
 from PyPDF2 import PdfReader, PdfWriter
 import textwrap
 import csv
-from datetime import datetime
+from datetime import datetime, timedelta
 import os
 import pandas as pd
 import time
@@ -13,7 +13,7 @@ import io
 from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode, JsCode
 from dotenv import load_dotenv
 load_dotenv()
-import os
+
 
 
 st.set_page_config(
@@ -157,7 +157,7 @@ def save_to_applications(title, company, location, work_type, url, source, statu
 
 # ---------- UI TABS ----------
 
-tab2, tab3, tab1 = st.tabs(["➕ Manualy Add Entry", "📚 History + Edit", "📄 Cover Letter Generator"])
+tab2, tab3, tab1 = st.tabs(["➕ Manually Add Entry", "📚 History + Edit", "📄 Cover Letter Generator"])
 
 with tab1:
     st.subheader("Generate Cover Letter (PDF)")
