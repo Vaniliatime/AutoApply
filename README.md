@@ -55,7 +55,7 @@ Tired of copying, pasting, and losing track of your job hunt? AutoApply makes ap
 4. **Run the app**
 
    ```bash
-   streamlit run App.py
+   streamlit run app.py
    ```
 
 ## File Guide
